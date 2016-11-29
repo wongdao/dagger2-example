@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Saturn implements Planet {
     @Override
     public String names() {
-        return "Saturn, Cronus, Shabbathai, Zuhal";
+        return "土星";
     }
 
     @Override

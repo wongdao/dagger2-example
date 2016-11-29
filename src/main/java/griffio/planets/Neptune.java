@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Neptune implements Planet {
     @Override
     public String names() {
-        return "Neptune, Le Verrier's planet, The planet exterior to Uranus";
+        return "海王星";
     }
 
     @Override

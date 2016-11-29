@@ -1,9 +1,9 @@
 package griffio.planets;
 
-public final class Ceres implements DwarfPlanet {
+public class Ceres implements DwarfPlanet {
     @Override
     public String names() {
-        return "Ceres";
+        return "谷神星";
     }
 
     @Override

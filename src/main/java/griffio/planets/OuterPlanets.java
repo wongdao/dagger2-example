@@ -12,12 +12,13 @@ public class OuterPlanets implements Iterable<Planet> {
     private Set<Planet> planets;
 
     @Inject
-    public OuterPlanets(@Named("Jupiter") Planet jupiter, @Named("Neptune") Planet neptune, @Named("Saturn") Planet saturn, @Named("Uranus") Planet uranus) {
+    public OuterPlanets(@Named("Jupiter") Planet jupiter, @Named("Neptune") Planet neptune,
+                        @Named("Saturn") Planet saturn, @Named("Uranus") Planet uranus) {
         this.planets = ImmutableSortedSet.orderedBy(new Planets()).add(neptune, saturn, uranus, jupiter).build();
     }
 
     public Set<Planet> getPlanets() {
-        return this.planets;
+        return planets;
     }
 
     @Override

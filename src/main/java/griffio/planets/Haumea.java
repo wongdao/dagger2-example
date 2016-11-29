@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Haumea implements DwarfPlanet {
     @Override
     public String names() {
-        return "Haumea";
+        return "妊神星";
     }
 
     @Override

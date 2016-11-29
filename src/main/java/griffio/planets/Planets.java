@@ -5,7 +5,7 @@ import com.google.common.collect.ComparisonChain;
 import java.util.Comparator;
 import java.util.Objects;
 
-final class Planets implements Comparator<Planet> {
+public final class Planets implements Comparator<Planet> {
     @Override
     public int compare(Planet a, Planet b) {
         return ComparisonChain.start().compare(a.au(), b.au()).result();

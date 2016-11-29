@@ -14,12 +14,14 @@ public class TerrestrialPlanets implements Iterable<Planet> {
     private Set<Planet> planets;
 
     @Inject
-    public TerrestrialPlanets(@Named("Earth") Planet earth, @Named("Mars") Planet mars, @Named("Venus") Planet venus) {
+    public TerrestrialPlanets(@Named("Earth") Planet earth, @Named("Mars") Planet mars,
+                              @Named("Venus") Planet venus) {
         this.planets = ImmutableSortedSet.orderedBy(new PlanetSorter()).add(earth, mars, venus).build();
     }
 
-    public Set<Planet> getPlanets() {
-        return this.planets;
+    @Override
+    public Iterator<Planet> iterator() {
+        return planets.iterator();
     }
 
     private static class PlanetSorter implements Comparator<Planet> {
@@ -27,10 +29,5 @@ public class TerrestrialPlanets implements Iterable<Planet> {
         public int compare(Planet a, Planet b) {
             return ComparisonChain.start().compare(a.au(), b.au()).result();
         }
-    }
-
-    @Override
-    public Iterator<Planet> iterator() {
-        return planets.iterator();
     }
 }

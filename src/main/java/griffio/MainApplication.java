@@ -15,19 +15,20 @@ public class MainApplication {
 
         TerrestrialPlanets terrestrialPlanets = solarSystem.terrestrial();
         for (Planet planet : terrestrialPlanets) {
-            System.out.println(String.format("%s is %.2f au from Sun", planet.names(), planet.au()));
+            System.out.println(String.format("%s距太阳约 %.2f au", planet.names(), planet.au()));
         }
 
         OuterPlanets outerPlanets = solarSystem.outer();
         for (Planet planet : outerPlanets) {
-            System.out.println(String.format("%s is %.2f au from Sun", planet.names(), planet.au()));
+            System.out.println(String.format("%s距太阳约 %.2f au", planet.names(), planet.au()));
         }
 
         DwarfPlanets dwarfPlanets = solarSystem.dwarf();
         for (Planet planet : dwarfPlanets) {
-            System.out.println(String.format("%s is %.2f au from Sun", planet.names(), planet.au()));
+            System.out.println(String.format("%s距太阳约 %.2f au", planet.names(), planet.au()));
         }
 
+        System.out.println("\n备注: au为天文单位, 曾以地球-太阳的平均距离定义, 现在改为1au=149,597,870,700米");
     }
 
 }

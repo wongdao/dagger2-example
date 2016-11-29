@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Earth implements Planet {
     @Override
     public String names() {
-        return "Earth,Gaia,Terra";
+        return "地球";
     }
 
     @Override

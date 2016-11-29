@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Eris implements DwarfPlanet {
     @Override
     public String names() {
-        return "Eris";
+        return "阋(xì)神星";
     }
 
     @Override

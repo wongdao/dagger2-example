@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Jupiter implements Planet {
     @Override
     public String names() {
-        return "Jupiter, Jove, The Gas Giant";
+        return "木星";
     }
 
     @Override

@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Uranus implements Planet{
     @Override
     public String names() {
-        return "Uranus, Ouranos, Georgium Sidus";
+        return "天王星";
     }
 
     @Override

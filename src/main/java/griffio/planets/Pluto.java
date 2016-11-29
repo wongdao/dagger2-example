@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Pluto implements DwarfPlanet {
     @Override
     public String names() {
-        return "Pluto";
+        return "冥王星";
     }
 
     @Override
@@ -21,3 +21,4 @@ public final class Pluto implements DwarfPlanet {
         return other instanceof DwarfPlanet && Planets.isEqual(this, (DwarfPlanet) other);
     }
 }
+

@@ -3,7 +3,7 @@ package griffio.planets;
 public final class Mercury implements Planet {
     @Override
     public String names() {
-        return "Mercury";
+        return "水星";
     }
 
     @Override

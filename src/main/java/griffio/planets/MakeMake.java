@@ -3,7 +3,7 @@ package griffio.planets;
 public final class MakeMake implements DwarfPlanet {
     @Override
     public String names() {
-        return "MakeMake";
+        return "鸟神星";
     }
 
     @Override
